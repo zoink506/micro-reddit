@@ -1,0 +1,18 @@
+Users
+ - username
+ * has_many posts
+
+Posts
+ - title
+ - link
+ - user id
+ * has_many comments
+ * belongs_to user
+
+Comments
+ - user id
+ - post id
+ - body
+ * belongs_to post
+ * belongs_to user
+
